@@ -130,24 +130,14 @@
     color: var(--color-background);
   }
 
-  @keyframes pageFadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
   body {
     font-family: var(--font-body);
     color: var(--color-maintext);
     @apply antialiased;
-    opacity: 0;
-    transform: translateY(10px);
-    animation: pageFadeIn 0.75s ease-out 0.08s forwards;
+    
+    /* 🛡️ CORRECCIÓN: Forzamos visibilidad total para que no aparezca en blanco */
+    opacity: 1 !important; 
+    
     background: linear-gradient(
       135deg,
       color-mix(in srgb, var(--color-background), black 16%) 0%,
@@ -176,3 +166,40 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: color-mix(in srgb, var(--color-accent), transparent 25%);
 }
+
+/* 🛡️ INYECCIÓN DE SEGURIDAD CON COLCHÓN DE ESPACIO PARA LA COLUMNA DERECHA */
+main {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  box-sizing: border-box !important;
+  
+  /* 📐 Devuelve el espacio de separación en los bordes para que no se pegue al extremo derecho */
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* En pantallas grandes (computadores/Mac), aumentamos un poco más el colchón para que respire igual al demo */
+@media (min-width: 1024px) {
+  main {
+    padding-left: 3rem !important;
+    padding-right: 4rem !important; /* Un poco más a la derecha para equilibrar el diseño */
+  }
+}
+
+/* Asegura que los componentes internos se ajusten al nuevo colchón de espacio */
+main section, 
+main article, 
+main .grid, 
+main .flex {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* 🛡️ Margen de respiración para la parte estática izquierda abajo */
+@media (min-width: 1024px) {
+  .lg\:sticky {
+    padding-bottom: 7rem !important;
+    box-sizing: border-box !important;
+  }
+}
+
