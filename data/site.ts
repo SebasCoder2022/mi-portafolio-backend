@@ -20,7 +20,7 @@ export const site = {
     role: 'Software Backend Developer',
     tagline: 'Especializado en el ecosistema Java y Spring Boot. Enfocado en la creación de microservicios robustos, diseño de arquitectura de software y optimización de bases de datos.',
     contact: 'Disponible para integrarse a equipos de ingeniería backend con tecnologías Java de alto impacto.',
-    avatarSrc: '/favicon.svg',
+    avatarSrc: '/Gemini_Generated_Image_ftr65sftr65sftr6.png',
     avatarAlt: 'Sebastián Torres C.',
   },
   about: {
