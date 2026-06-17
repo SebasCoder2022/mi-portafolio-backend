@@ -35,8 +35,21 @@ export const site = {
   },
   experiences: [
     {
-      period: 'Jun 2025 - Act',
-      title: 'Desarrollador Backend Jr.',
+      period: 'Jun 2026 - Act',
+      title: 'Desarrollador Java SSR.',
+      company: 'Isoptic Group',
+      summary:
+        'Diseño y evolución de arquitecturas modulares bajo el modelo Zero Trust utilizando Java y Spring Boot, enfocadas en código sostenible y mitigar la deuda técnica.',
+      highlights: [
+        'Aplicación de principios SOLID, Clean Code y patrones de diseño para asegurar la mantenibilidad del software.',
+        'Supervisión y mentoría técnica de desarrolladores Junior a través de Code Reviews exhaustivos.',
+        'Aseguramiento del cumplimiento de estándares de codificación limpia y aceleración de la curva de aprendizaje del equipo.',
+      ],
+      tech: ['Java', 'Spring Boot', 'Clean Architecture', 'Zero Trust'],
+    },
+    {
+      period: 'Jun 2025 - Jun 2026',
+      title: 'Desarrollador Backend JR.',
       company: 'Isoptic Group',
       summary:
         'Implementación de soluciones de seguridad informática robustas en Java y Spring Boot enfocadas en la gestión centralizada de accesos bajo el modelo Zero Trust.',
@@ -48,7 +61,7 @@ export const site = {
       tech: ['Java', 'Spring Boot', 'APIs REST', 'Zero Trust'],
     },
     {
-      period: '2024 - 2025',
+      period: 'Ene 2024 - 2025',
       title: 'Ingeniero de TI',
       company: 'Isoptic Group',
       summary:
@@ -61,7 +74,7 @@ export const site = {
       tech: ['Servidores', 'Seguridad', 'Linux', 'Infraestructura'],
     },
     {
-      period: '2022 - 2023',
+      period: 'Jul 2022 - Dic 2023',
       title: 'Ingeniero de Infraestructura de TI',
       company: 'Electritorres S.A.S',
       summary:
